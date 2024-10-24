@@ -1,10 +1,10 @@
 FROM ghcr.io/maxherbs/jekyll-base:latest
 
-COPY myblog /blog
-COPY build.sh /blog/
-WORKDIR /blog
+COPY myblog /myblog
+COPY build.sh /myblog/
+WORKDIR /myblog
 
 RUN chmod +x build.sh
-RUN bash /blog/build.sh
+RUN bash /myblog/build.sh
 
 CMD ["apachectl", "-D", "FOREGROUND"]
