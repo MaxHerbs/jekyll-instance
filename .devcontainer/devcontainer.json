@@ -1,0 +1,16 @@
+{
+    "name": "Jekyll-instance Dev Container",
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-vscode-remote.remote-containers",
+        "rebornix.Ruby"
+    ],
+    "forwardPorts": [5000],
+    "appPort": [80],
+    "postStartCommand": "service apache2 start"
+}
