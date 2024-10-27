@@ -8,10 +8,12 @@
     },
     "extensions": [
         "ms-vscode-remote.remote-containers",
-        "rebornix.Ruby"
+        "rebornix.Ruby",
+        "GitHub.copilot"
     ],
     "forwardPorts": [5000],
     "appPort": [80],
     "postStartCommand": "service apache2 start"
+    
     
 }
