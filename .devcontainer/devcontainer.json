@@ -3,14 +3,18 @@
     "build": {
         "dockerfile": "../Dockerfile"
     },
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-vscode-remote.remote-containers",
+                "rebornix.Ruby",
+                "GitHub.copilot"
+            ]
+        }
     },
-    "extensions": [
-        "ms-vscode-remote.remote-containers",
-        "rebornix.Ruby",
-        "GitHub.copilot"
-    ],
     "forwardPorts": [5000],
     "appPort": [80],
     "postStartCommand": "service apache2 start"
