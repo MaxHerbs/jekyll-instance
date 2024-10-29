@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nixie Clock Time Module"
-subtitle: ""
+subtitle: "Building a consumer-focused NTP time module for nixie clocks"
 date: 2024-9-9
 background: '/img/posts/nixie-time-module/nixie-header.jpg'
 ---
