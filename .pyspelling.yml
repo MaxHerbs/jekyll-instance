@@ -1,0 +1,80 @@
+matrix:
+
+- name: markdown
+  sources:
+  - 'myblog/_posts/*'
+  aspell:
+    lang: en
+  dictionary:
+    wordlists:
+    - 'custom-dictionary.txt'
+  pipeline:
+  - pyspelling.filters.markdown:
+      markdown_extensions:
+      - markdown.extensions.extra:
+  - pyspelling.filters.html:
+      comments: true
+      attributes:
+      - title
+      - alt
+      ignores:
+      - :matches(code, pre, samp, kbd, var)
+      # In HTML:
+      # <code>  Defines a piece of computer code
+      # <pre>   Defines pre-formatted text
+      # <samp>  Defines sample output from a computer program
+      # <kbd>   Defines keyboard input
+      # <var>   Defines a variable
+
+- name: python
+  sources:
+  - 'python-files/**/*.py'
+  - 'src/**/*.py'
+  aspell:
+    lang: en
+  dictionary:
+    wordlists:
+    - 'custom-dictionary.txt'
+  pipeline:
+  - pyspelling.filters.python:
+      # the following options are 'true' by default: 'comments', 'docstrings', and 'decode_escapes'
+
+- name: javascript
+  sources:
+  - 'javascript-files/**/*.js'
+  aspell:
+    lang: en
+  dictionary:
+    wordlists:
+    - 'custom-dictionary.txt'
+  pipeline:
+  - pyspelling.filters.javascript:
+      jsdocs: true
+      # the following options are 'true' by default: 'line_comments' and 'block_comments'
+
+# - name: xml
+#   sources:
+#   - 'xml-files/*.xml'
+#   aspell:
+#     lang: en
+#   dictionary:
+#     wordlists:
+#     - 'custom-dictionary.txt'
+#   pipeline:
+#   - pyspelling.filters.xml:
+#       comments: false
+#       captures:
+#       - :matches(value, name, description, label)
+
+- name: text
+  sources:
+  - 'xml-files/extracted_text_from_xml.txt'
+  aspell:
+    lang: en
+  dictionary:
+    wordlists:
+    - 'custom-dictionary.txt'
+  default_encoding: cp1252
+  pipeline:
+  - pyspelling.filters.text:
+      convert_encoding: utf-8

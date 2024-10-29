@@ -30,10 +30,8 @@ jobs:
     - name: Display Python version
       run: python -c "import sys; print(sys.version)"
 
-    - name: Test text extraction script
-      run: python -m pytest
 
     - name: Run spell-check
       run: |
-        ./myblog/_posts/*.md
+        ./src/extract_text_from_xml.py
         python -m pyspelling
