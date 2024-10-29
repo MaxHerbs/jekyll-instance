@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Desktop Telemetary"
+title: "Desktop Telemetry"
 subtitle: "Building a small form-factor desktop device for traffic updates, monitoring the weather, and more."
 date: 2024-10-18
 background: '/img/posts/desktop-telemetry/grafana-dash.jpg'
@@ -11,11 +11,11 @@ At the time of writing this, this work is still ongoing and **very** incomplete.
 
 ---
 ## Motivation
-This was originally supposed to be a cheap and cheerfull fix to a problem I have with commuting. I have a fairly significant commute right now, but my employer offers a flexi-time scheme which is a great way to avoid rush hour where possible. This however leads to my daily question and the motivation for this project; has the traffic cleared up yet?
+This was originally supposed to be a cheap and cheerful fix to a problem I have with commuting. I have a fairly significant commute right now, but my employer offers a flexi-time scheme which is a great way to avoid rush hour where possible. This however leads to my daily question and the motivation for this project; has the traffic cleared up yet?
 
-I needed a simple desktop device that I could take an occasional glance at that would let me know how long it would take to get home, allowing me to work when suitable and head home when the traffic reached a reasonble level.
+I needed a simple desktop device that I could take an occasional glance at that would let me know how long it would take to get home, allowing me to work when suitable and head home when the traffic reached a reasonable level.
 
-This was supposed to be the end of the scope of the project, but after v0.1 was finished, it seemed a shame to do so little with such flexible setup, and so I started to develop support for a weather screen and a clock - stuctured to leave the door open to more in future.
+This was supposed to be the end of the scope of the project, but after v0.1 was finished, it seemed a shame to do so little with such flexible setup, and so I started to develop support for a weather screen and a clock - structured to leave the door open to more in future.
 
 The device has several distinct screens, one for each metric, which it rotates through at a configured interval.
 
@@ -33,7 +33,7 @@ The screen is very primitive at this stage as it was thrown together quickly as 
 
 ---
 ## Key Design Decisions
-To get traffic, weather, and any other information from remote API, large post request bodies, header information, other generally static text data was needed. These sort of large strings would eat up the available RAM - which could causes issues later down the line as several API could eat up the small amount available in an embeded chip like this.
+To get traffic, weather, and any other information from remote API, large post request bodies, header information, other generally static text data was needed. These sort of large strings would eat up the available RAM - which could causes issues later down the line as several API could eat up the small amount available in an embedded chip like this.
 
 Instead of being written straight into the sketch where they would persist and fragment the RAM, a combination of config files and templates was used to build large strings on the fly, and release the RAM when they're no longer needed. 
 
@@ -53,7 +53,7 @@ The post request body should follow the following format, where jinja-like place
 {% endraw %}
 ```
 
-Then the provided configuration file can be deserialised with and template the placeholders by mapping with the same key.
+Then the provided configuration file can be deserialized with and template the placeholders by mapping with the same key.
 
 ```json
   "postParams": {
@@ -62,7 +62,7 @@ Then the provided configuration file can be deserialised with and template the p
    },
 ```
 
-Each new function - essentially each distinct screen - is then encapsulated into an object which maintains its own update frequency. `object.update()` is exposed to the top level of the code, and run every loop of the sketch. This function is present in all objects, and when its own update period is passed, refreshes all relevent values, which are then used to populate assets on screens when the device moves onto the next screen.
+Each new function - essentially each distinct screen - is then encapsulated into an object which maintains its own update frequency. `object.update()` is exposed to the top level of the code, and run every loop of the sketch. This function is present in all objects, and when its own update period is passed, refreshes all relevant values, which are then used to populate assets on screens when the device moves onto the next screen.
 
 ---
 ## Coming to Life
