@@ -87,4 +87,9 @@ The project is essentially complete. There are a few bugs and stability issues t
 
 Proper documentation and guide to reproduce this is yet to be completed. As it stands, the only step necessary to reproduce this at home is to solder a 3.5mm wire to a standard development ESP8266 board such as [this one](https://store.arduino.cc/products/nodemcu-esp8266), or order a copy of the PCB and simply plug in. The code is all open source so reproducing the project shouldn't be too difficult.
 
+<div class="image-container">
+    <img src="/img/posts/nixie-time-module/many-esp.jpg" alt="The case and two PCB's" style="width: 100%; height: auto;">
+</div>
+
 For the source code, and more technical information, see the [github repository](https://github.com/MaxHerbs/esp-time-controller). There is also a branch containing the same project, designed for an ESP32 - this branch is deprecated as the project has been ported to an ESP8266.
+
