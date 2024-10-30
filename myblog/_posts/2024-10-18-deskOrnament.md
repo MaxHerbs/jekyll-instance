@@ -5,7 +5,7 @@ subtitle: "Building a small form-factor desktop device for traffic updates, moni
 date: 2024-10-18
 background: '/img/posts/desktop-telemetry/grafana-dash.jpg'
 ---
-##### [The source and technical information about the project can be found in this github repository here](https://github.com/MaxHerbs/eta-ornament)
+##### [The source and technical information about the project can be found in this github repository here](https://github.com/MaxHerbs/desktop-telemetry)
 
 At the time of writing this, this work is still ongoing and **very** incomplete.
 
