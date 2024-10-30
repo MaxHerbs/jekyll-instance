@@ -3,9 +3,8 @@
 name: Test
 on:
   pull_request:
-  push:
-    tags:
-      - '*'
+  push: { branches: main }
+
 
 jobs:
   spelling:
