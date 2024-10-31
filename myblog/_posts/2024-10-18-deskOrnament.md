@@ -80,14 +80,14 @@ With the PCB here, its time to put together the first model, and check the circu
     <img src="/img/posts/desktop-telemetry/realPcb.jpg" alt="The real PCB" style="width: 100%; height: auto;">
 </div>
 
-The parts are the board PCB, the display mount, and the bezzel to hide the internals
-After some soldering, the design materialises. For this dev build I have opted to use headers rather than mounting the parts straight to the board - incase any parts get damaged during testing and need to be replaced.
+The parts are the board PCB, the display mount, and the bezzle to hide the internals
+After some soldering, the design materialises. For this dev build I have opted to use headers rather than mounting the parts straight to the board - so if any parts are damaged during testing they can be easily replaced.
 
 <div style="display: flex; align-items: flex-start; width: 100%;">
   <div style="flex: 1; padding: 10px;">
     <figure style="margin: 0;">
       <img src="/img/posts/desktop-telemetry/parts.jpg" alt="Breakout cable to upload code to the ESP01" style="width: 100%;">
-      <figcaption style="text-align: center; margin-top: 8px; font-style: italic;">The main board. The esp is mounted to the PCB, with an SD card on the opposite side. There is also connection points for a 5V DC supply so that a full USB isnt needed.</figcaption>
+      <figcaption style="text-align: center; margin-top: 8px; font-style: italic;">The main board. The esp is mounted to the PCB, with an SD card on the opposite side. There is also connection points for a 5V DC supply so that a full USB isn't needed.</figcaption>
     </figure>
   </div>
 
@@ -112,7 +112,7 @@ The wiring and and general structure has worked out nicely and the module fits p
   <div style="flex: 1; padding: 10px;">
     <figure style="margin: 0;">
       <img src="/img/posts/desktop-telemetry/both.jpg" alt="The whole module plugged in" style="width: 100%;">
-      <figcaption style="text-align: center; margin-top: 8px; font-style: italic;">Two sets of PCB, one in and one out of the shell. The screen and mounting for the bezzel are missing to make the internals clearer.</figcaption>
+      <figcaption style="text-align: center; margin-top: 8px; font-style: italic;">Two sets of PCB, one in and one out of the shell. The screen and mounting for the bezzle are missing to make the internals clearer.</figcaption>
     </figure>
   </div>
 </div>
