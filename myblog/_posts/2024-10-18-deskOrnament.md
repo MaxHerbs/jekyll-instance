@@ -7,8 +7,6 @@ background: '/img/posts/desktop-telemetry/grafana-dash.jpg'
 ---
 ##### [The source and technical information about the project can be found in this github repository here](https://github.com/MaxHerbs/desktop-telemetry)
 
-At the time of writing this, this work is still ongoing and **very** incomplete.
-
 ---
 ## Motivation
 This was originally supposed to be a cheap and cheerful fix to a problem I have with commuting. I have a fairly significant commute right now, but my employer offers a flexi-time scheme which is a great way to avoid rush hour where possible. This however leads to my daily question and the motivation for this project; has the traffic cleared up yet?
@@ -74,3 +72,47 @@ For a case, I used a piece of 135 degree pipe bend, and made a round PCB to moun
     <img src="/img/posts/desktop-telemetry/multi-photo.png" alt="The case and two PCB's" style="width: 100%; height: auto;">
 </div>
 
+---
+## Building the Module
+With the PCB here, its time to put together the first model, and check the circuit is correct.
+
+<div class="image-container">
+    <img src="/img/posts/desktop-telemetry/realPcb.jpg" alt="The real PCB" style="width: 100%; height: auto;">
+</div>
+
+The parts are the board PCB, the display mount, and the bezzel to hide the internals
+After some soldering, the design materialises. For this dev build I have opted to use headers rather than mounting the parts straight to the board - incase any parts get damaged during testing and need to be replaced.
+
+<div style="display: flex; align-items: flex-start; width: 100%;">
+  <div style="flex: 1; padding: 10px;">
+    <figure style="margin: 0;">
+      <img src="/img/posts/desktop-telemetry/parts.jpg" alt="Breakout cable to upload code to the ESP01" style="width: 100%;">
+      <figcaption style="text-align: center; margin-top: 8px; font-style: italic;">The main board. The esp is mounted to the PCB, with an SD card on the opposite side. There is also connection points for a 5V DC supply so that a full USB isnt needed.</figcaption>
+    </figure>
+  </div>
+
+  <div style="flex: 1; padding: 10px;">
+    <figure style="margin: 0;">
+      <img src="/img/posts/desktop-telemetry/parts-together.jpg" alt="The whole module plugged in" style="width: 100%;">
+      <figcaption style="text-align: center; margin-top: 8px; font-style: italic;">The whole module. The daughter board with the screen is mounted at an angle to the main board and provides the holes to align the screen properly. </figcaption>
+    </figure>
+  </div>
+</div>
+
+The wiring and and general structure has worked out nicely and the module fits perfectly in the shell! 
+
+<div style="display: flex; align-items: flex-start; width: 100%;">
+  <div style="flex: 1; padding: 10px;">
+    <figure style="margin: 0;">
+      <img src="/img/posts/desktop-telemetry/screen-on.jpg" alt="Breakout cable to upload code to the ESP01" style="width: 100%;">
+      <figcaption style="text-align: center; margin-top: 8px; font-style: italic;">The module works just as it did on the breadboard. The main board can be mounted to three separate headers to compensate for miss-alignments.</figcaption>
+    </figure>
+  </div>
+
+  <div style="flex: 1; padding: 10px;">
+    <figure style="margin: 0;">
+      <img src="/img/posts/desktop-telemetry/both.jpg" alt="The whole module plugged in" style="width: 100%;">
+      <figcaption style="text-align: center; margin-top: 8px; font-style: italic;">Two sets of PCB, one in and one out of the shell. The screen and mounting for the bezzel are missing to make the internals clearer.</figcaption>
+    </figure>
+  </div>
+</div>
