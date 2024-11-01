@@ -3,7 +3,11 @@
 name: Check Spelling
 on:
   pull_request:
-  push: { branches: main }
+  push: 
+    branches:
+      - "*"
+    tags:
+      - "*"
 
 
 jobs:
