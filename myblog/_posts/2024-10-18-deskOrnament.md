@@ -80,7 +80,7 @@ With the PCB here, its time to put together the first model, and check the circu
     <img src="/img/posts/desktop-telemetry/realPcb.jpg" alt="The real PCB" style="width: 100%; height: auto;">
 </div>
 
-The parts are the board PCB, the display mount, and the bezzle to hide the internals
+The parts are the board PCB, the display mount, and the bezel to hide the internals
 After some soldering, the design materialises. For this dev build I have opted to use headers rather than mounting the parts straight to the board - so if any parts are damaged during testing they can be easily replaced.
 
 <div style="display: flex; align-items: flex-start; width: 100%;">
@@ -112,7 +112,7 @@ The wiring and and general structure has worked out nicely and the module fits p
   <div style="flex: 1; padding: 10px;">
     <figure style="margin: 0;">
       <img src="/img/posts/desktop-telemetry/both.jpg" alt="The whole module plugged in" style="width: 100%;">
-      <figcaption style="text-align: center; margin-top: 8px; font-style: italic;">Two sets of PCB, one in and one out of the shell. The screen and mounting for the bezzle are missing to make the internals clearer.</figcaption>
+      <figcaption style="text-align: center; margin-top: 8px; font-style: italic;">Two sets of PCB, one in and one out of the shell. The screen and mounting for the bezel are missing to make the internals clearer.</figcaption>
     </figure>
   </div>
 </div>
