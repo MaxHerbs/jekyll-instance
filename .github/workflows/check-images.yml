@@ -33,4 +33,4 @@ jobs:
 
       - name: Run Test
         run: |
-          poetry run image-validator validate -p .github/image-checker.yaml
+          image-validator validate -p .github/image-checker.yaml
