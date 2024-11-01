@@ -30,7 +30,7 @@ jobs:
           cd image-validator
           poetry install
           cd ..
-
       - name: Run Test
         run: |
-          image-validator validate -p .github/image-checker.yaml
+          poetry run python -m image_validator validate -p ../.github/image-checker.yaml
+
