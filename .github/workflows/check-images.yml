@@ -23,10 +23,10 @@ jobs:
       - name: Install repo dependencies
         run: |
           git clone https://github.com/MaxHerbs/image-validator.git
-          cd image-validator
 
       - name: Install Dependencies
         run: |
+          cd image-validator
           python -m pip install --upgrade pip
           pip install -r requirements.txt # Adjust if you have a different requirements file
           cd ..
