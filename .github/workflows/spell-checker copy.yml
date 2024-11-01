@@ -20,9 +20,16 @@ jobs:
           curl -sSL https://install.python-poetry.org | python3 -
           echo "${{ runner.temp }}/.poetry/bin" >> $GITHUB_PATH
 
+      - name: Clone the image-validator repository
+        run: |
+          git clone https://github.com/MaxHerbs/image-validator.git
+
+
       - name: Install Dependencies
         run: |
+          cd image-validator
           poetry install
+          cd ..
 
       - name: Run Test
         run: |
