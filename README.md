@@ -22,10 +22,9 @@ Then check VSCode to see what port has been forwarded from the containers port 8
 
 
 # CI/CD
-At the time of writing there are two CI
 
-1. **Docker Image Builder** - This builds the docker file whenever a new tag is posted, which is then targeted by GKE to run the site.
+1. **Docker Image Builder** - This builds a docker image on tag.
 
 2. **Spell Checker** - Checks the spellings off all the blog posts.
 
-3. **COMING SOON - GKE CI** - GKE CI to push the image straight to the GKE, removing the final bit of effort involed in releasing an update.
+3. **Check Images** - Verifies image links in blog posts exist.
