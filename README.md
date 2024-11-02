@@ -1,8 +1,8 @@
+# Jekyll-instance
 ![Spelling Checks](https://github.com/maxherbs/jekyll-instance/actions/workflows/spell-checker.yml/badge.svg)
 ![Image Path Checks](https://github.com/maxherbs/jekyll-instance/actions/workflows/check-images.yml/badge.svg)
 ![Image Build](https://github.com/maxherbs/jekyll-instance/actions/workflows/build-img.yml/badge.svg)
 
-# Jekyll-instance
 This is the portfolio itself. `myblog` contains the blog, with all the corresponding posts and images.
 
 The repository uses a [base image](https://github.com/maxherbs/jekyll-base) which contains an apache webserver, and the requirements to build the static site.
