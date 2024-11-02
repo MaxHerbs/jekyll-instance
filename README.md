@@ -1,5 +1,5 @@
 ![Spelling Checks](https://github.com/maxherbs/jekyll-instance/actions/workflows/spell-checker.yml/badge.svg)
-![Image Path Checks](https://github.com/maxherbs/jekyll-instance/actions/workflows/check-image.yml/badge.svg)
+![Image Path Checks](https://github.com/maxherbs/jekyll-instance/actions/workflows/check-images.yml/badge.svg)
 ![Image Build](https://github.com/maxherbs/jekyll-instance/actions/workflows/build-img.yml/badge.svg)
 
 # Jekyll-instance
