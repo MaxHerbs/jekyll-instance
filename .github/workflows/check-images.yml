@@ -18,18 +18,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8' # Specify the Python version you want to use
+          python-version: '3.10' # Specify the Python version you want to use
 
       - name: Install repo dependencies
         run: |
-          git clone https://github.com/MaxHerbs/image-validator.git
-
-      - name: Install Dependencies
-        run: |
-          cd image-validator
           python -m pip install --upgrade pip
-          pip install -r requirements.txt # Adjust if you have a different requirements file
-          cd ..
+          pip install git+https://github.com/maxherbs/image-validator
 
       - name: Run validator
         run: |
