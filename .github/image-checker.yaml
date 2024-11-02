@@ -1,4 +1,4 @@
-imgbasePath: "myblog" # Base path for images
+imgBasePath: "myblog" # Base path for images
 
 searchTypes: # List of supported search types
   - regex
