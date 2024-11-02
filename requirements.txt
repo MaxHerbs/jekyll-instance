@@ -1,5 +1,5 @@
 click==8.1.7
--e git+ssh://git@github.com/MaxHerbs/image-validator.git@57dc1de486b750c7e41b35f5a74fbab94f9db30a#egg=image_validator
+git+https://github.com/maxherbs/image-validator
 markdown-it-py==3.0.0
 mdurl==0.1.2
 Pygments==2.18.0

@@ -1,4 +1,4 @@
-name: CI
+name: Check Image Paths
 
 on:
   pull_request:

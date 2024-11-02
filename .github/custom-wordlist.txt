@@ -40,3 +40,8 @@ deserialized
 ArgoCD
 jekyll's
 webserver's
+GHCR
+pyspelling
+CLI
+pre
+validator
