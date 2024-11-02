@@ -93,7 +93,7 @@ After some soldering, the design materialises. For this dev build I have opted t
 
   <div style="flex: 1; padding: 10px;">
     <figure style="margin: 0;">
-      <img src="/img/posts/desktop-telemetry/parts-togethr.jpg" alt="The whole module plugged in" style="width: 100%;">
+      <img src="/img/posts/desktop-telemetry/parts-together.jpg" alt="The whole module plugged in" style="width: 100%;">
       <figcaption style="text-align: center; margin-top: 8px; font-style: italic;">The whole module. The daughter board with the screen is mounted at an angle to the main board and provides the holes to align the screen properly. </figcaption>
     </figure>
   </div>
