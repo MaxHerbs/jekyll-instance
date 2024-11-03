@@ -8,5 +8,3 @@ directories:
   - dir: "myblog/_posts"
     fileTypes: # Key can be * or ommitted for all files.
       - md
-
-
