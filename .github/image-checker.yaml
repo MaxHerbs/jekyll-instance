@@ -2,6 +2,7 @@ imgBasePath: "myblog" # Base path for images
 
 searchTypes: # List of supported search types
   - regex
+  - frontmatter
 
 directories:
   - dir: "myblog/_posts"
