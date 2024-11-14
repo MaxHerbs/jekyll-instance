@@ -45,3 +45,4 @@ pyspelling
 CLI
 pre
 validator
+maxherbs

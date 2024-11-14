@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jekyll-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jekyll
+  template:
+    metadata:
+      labels:
+        app: jekyll
+    spec:
+      containers:
+        - name: jekyll-container
+          image: ghcr.io/maxherbs/jekyll-instance:2024.10.3b4
+          ports:
+            - containerPort: 80

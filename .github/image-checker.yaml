@@ -1,10 +1,10 @@
-imgBasePath: "myblog" # Base path for images
+imgBasePath: "myblog"
 
-searchTypes: # List of supported search types
+searchTypes:
   - regex
   - frontmatter
 
 directories:
   - dir: "myblog/_posts"
-    fileTypes: # Key can be * or ommitted for all files.
+    fileTypes:
       - md
