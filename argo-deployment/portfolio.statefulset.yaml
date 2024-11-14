@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: portfolio-statefulset
+  labels:
+    app: portfolio 
+spec:
+  serviceName: "portfolio"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: portfolio 
+  template:
+    metadata:
+      labels:
+        app: portfolio 
+    spec:
+      containers:
+      - name: memos
+        image: ghcr.io/maxherbs/jekyll-instance:latest
+        ports:
+        - containerPort: 80 
