@@ -1,7 +1,8 @@
 {
     "name": "Jekyll-instance Dev Container",
     "build": {
-        "dockerfile": "../Dockerfile"
+        "dockerfile": "../Dockerfile",
+        "target": "developer"
     },
     "customizations": {
         "vscode": {
@@ -16,6 +17,6 @@
         }
     },
     "forwardPorts": [5000],
-    "appPort": [80],
+    "appPort": [5000],
     "postStartCommand": "service apache2 start" 
 }
